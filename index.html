@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="John Kenneth M. Navarette">
+        <meta name="description" content="A Personal Blog Website">
+        <meta name="keywords" content="Personal Blog, Blog Website">
+        
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script>
+            function changeActiveState(itemNumber) {
+                var x = document.getElementsByClassName('item');
+                var i;
+                for(i = 0; i < x.length; x++) {
+                    x[i].style.boxShadow = 'none';
+                    if(i == itemNumber) {
+                        x[i].style.backgroundColor = 'coral';
+                        x[i].style.boxShadow = '10px 7px 10px gray';
+                    }else{
+                        x[i].style.backgroundColor = 'white';
+                    }
+                }
+            }
+        </script>
+        <title>Blog | Personal Blog Website</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header-wrapper" id="home">
+                <div class="container">
+                    <h1>A Place for Everyone to Share and Discover New Stories<h1>
+                </div>
+            </header>
+            <main class="main-wrapper">
+                <div class="container">
+                    <div class="blog-content">
+                        <div class="inner-container">
+                            <nav class="nav-bar" id="blog">
+                                <ul>
+                                    <li><a href="##" class="active item" onclick="changeActiveState(0)">All</a></li>
+                                    <li><a href="##" class="item" onclick="changeActiveState(1)">Sports</a></li>
+                                    <li><a href="##" class="item" onclick="changeActiveState(2)">Gaming</a></li>
+                                    <li><a href="##" class="item" onclick="changeActiveState(3)">Arts</a></li>
+                                    <li><a href="##" class="item" onclick="changeActiveState(4)">Celebrities</a></li>
+                                </ul>
+                            </nav>
+                            <section class="blog-post">
+                                <div class="blog1">
+                                    <div class="content">
+                                        <h2>The Best Productivity Apps</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla eius itaque illum, qui quaerat voluptatibus natus eaque quidem omnis vitae quisquam quibusdam molestias, veritatis nisi ullam? Assumenda, earum laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="blog2">
+                                    <div class="content">
+                                        <h2>Working on Wallstreet is Easy</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, delectus libero? Facilis quaerat cupiditate libero accusantium iusto dolore placeat porro dolorum consectetur, id temporibus modi impedit voluptas accusamus omnis expedita.</p>
+                                    </div>
+                                </div>
+                                <div class="blog3">
+                                    <div class="content">
+                                        <h2>0 to 100.000 Customers in 6 months</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla eius itaque illum, qui quaerat voluptatibus natus eaque quidem omnis vitae quisquam quibusdam molestias, veritatis nisi ullam? Assumenda, earum laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla eius itaque illum, qui quaerat voluptatibus natus eaque quidem omnis vitae quisquam quibusdam molestias, veritatis nisi ullam? Assumenda, earum laborum.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="other-post">
+                                <h1>You may also be interested in</h1>
+                                <div class="post1">
+                                    <img src="images/4-blogpost.jpg" alt="">
+                                    <h4>Sports</h4>
+                                    <h2>Post Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet animi dolore voluptatum, rerum doloremque eos nostrum ex velit qui cum.</p>
+                                </div>
+                                <div class="post2">
+                                    <img src="images/5-blogpost.jpg" alt="">
+                                    <h4>Celebrities</h4>
+                                    <h2>Post Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet animi dolore voluptatum, rerum doloremque eos nostrum ex velit qui cum.</p>
+                                </div>
+                                <div class="post3">
+                                    <img src="images/6-blogpost.jpg" alt="">
+                                    <h4>Tech</h4>
+                                    <h2>Post Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet animi dolore voluptatum, rerum doloremque eos nostrum ex velit qui cum.</p>
+                                </div>
+                            </section>
+                            <section class="about-me-wrapper" id="about">
+                                <div class="about-me">
+                                    <div class="about-me-content">
+                                        <div>
+                                            <img src="images/profile.jpg" alt="Profile">
+                                        </div>
+                                        <div>
+                                            <h3>John Kenneth M. Navarette</h3>
+                                            <h5>Author of the Month</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequuntur consequatur eos accusantium sit aliquam dignissimos labore ex quam excepturi earum, aliquid magnam ducimus quaerat. Iure neque tempore fugit inventore!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer-wrapper">
+                <div class="container">
+                    <div class="inner-container">
+                        <h1>UG Designs</h1>
+                        <nav id="center-nav">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#about">About</a></li>
+                            </ul>
+                        </nav>
+                        <nav id="right-nav">
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Yahoo</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
